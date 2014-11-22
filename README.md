@@ -1,26 +1,40 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [Agency](http://startbootstrap.com/template-overviews/agency/)
+SMastroianni Website
+====================
 
-[Agency](http://startbootstrap.com/template-overviews/agency/) is a one page agency portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, a responsive timeline, and a working PHP contact form.
+Agency theme based on [Agency bootstrap theme](http://startbootstrap.com/templates/agency/)
 
-## Getting Started
+# Instructions
 
-To use this theme, choose one of the following options to get started:
-* Download the latest release on Start Bootstrap
-* Fork this repository on GitHub
+This website is built using [Jekyll](http://jekyllrb.com/), which aids in building static webpages using a templating approach.
 
-## Bugs and Issues
+Assuming a OS X environment you need to install the `jeykll` gem.
 
-Have a bug or an issue with this theme? [Open a new issue](https://github.com/IronSummitMedia/startbootstrap-agency/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/agency/).
+    gem install jekyll
 
-## Creator
+This will give you access to the `jekyll serve` command, which will allow you to view/develop the website locally. After executing this command you can visit `http://127.0.0.1:4000/` to view the website. As long as the `jekyll serve` command is running any changes you make will be reflected in the browser (although you have to manually refresh the page).
 
-Start Bootstrap was created by and is maintained by **David Miller**, Managing Parter at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/).
+Simply pushing the new changes to github will deploy the website from its *jeykell* state.
 
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
+# Jekyll Structure
 
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+## HTML
 
-## Copyright and License
+The `_layouts` directory specifies the layotus for to *constructing* the website. A `default.html` layout is provided which is applied to the index page, which imports the specified files from the `_includes` directory. Thus it is simple to add a new *html* file to the `_includes` directory, and simply *include* it in the `_layouts/default.html`.
 
-Copyright 2014 Iron Summit Media Strategies, LLC. Code released under the [Apache 2.0](https://github.com/IronSummitMedia/startbootstrap-agency/blob/gh-pages/LICENSE) license.
+## Misc.
+
+### Portfolio
+
+Portfolio projects are in '/_posts'
+
+Images are in '/img/portfolio'
+
+### About
+
+Images are in '/img/about/'
+
+### Team
+
+Team members and info are in '_config.yml'
+
+Images are in '/img/team/'
